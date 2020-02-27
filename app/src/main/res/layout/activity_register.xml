@@ -40,6 +40,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:onClick="handleChangeImage"
                 app:layout_constraintBottom_toBottomOf="@+id/image_profile"
                 app:layout_constraintEnd_toEndOf="@+id/image_profile"
                 app:srcCompat="@drawable/edit_icon"
@@ -177,6 +178,7 @@
 
     <Button
         android:id="@+id/button_ok"
+        android:onClick="handleSubmit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -188,7 +190,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="handleOkRegister"
         />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
